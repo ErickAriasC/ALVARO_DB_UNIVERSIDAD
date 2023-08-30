@@ -13,6 +13,16 @@ telefono varchar (9)not null,
 fecha_nacimiento date not null,
 sexo enum ('H','M') not null
 );
+insert into alumno(id_alumno,nif,nombre,apellido1,apellido2,
+ciudad,direccion,telefono,fecha_nacimiento,sexo) values
+ (5,'e2e3e4e5e','mirian','ardila','martinez','putumayo','BARRI0 llanitos #13-19','123456789','2023-05-18',2);
+ 
+#cambiar un valor agregado en sexo
+update alumno 
+set sexo=2
+where id_alumno=2;
+select*from alumno;
+
 
 create table curso_escolar(
 id_curso_escolar integer (10) primary key not null,
